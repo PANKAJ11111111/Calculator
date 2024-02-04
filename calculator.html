@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Pankaj Calulator</title>
+</head>
+<body id="main">
+
+    <h1 id="heading">Calulator Generate By Pankaj Sir</h1>
+
+    <div class="cal-box">
+         
+        <input type="text" readonly id="display">
+
+        <div id="button-box">
+
+            <button class="button" onclick="expression =''; document.querySelector('#display').value = expression " >C</button>
+            <button class="button" onclick =  " expression +='1';  document.querySelector('#display').value = expression">1</button>
+            <button class="button" onclick="expression+='2'; document.querySelector('#display').value= expression">2</button>
+            <button class="button" onclick="expression+='+'; document.querySelector('#display').value= expression">+</button>
+            <button class="button" onclick="expression+='3'; document.querySelector('#display').value= expression">3</button>
+            <button class="button" onclick="expression+='4'; document.querySelector('#display').value= expression">4</button>
+            <button class="button" onclick="expression+='-'; document.querySelector('#display').value= expression">-</button>
+            <button class="button" onclick="expression+='5'; document.querySelector('#display').value= expression">5</button>
+            <button class="button" onclick="expression+='6'; document.querySelector('#display').value= expression">6</button>
+            <button class="button" onclick="expression+='*'; document.querySelector('#display').value= expression">*</button>
+            <button class="button" onclick="expression+='7'; document.querySelector('#display').value= expression">7</button>
+            <button class="button" onclick="expression+='8'; document.querySelector('#display').value= expression">8</button>
+            <button class="button" onclick="expression+='/'; document.querySelector('#display').value= expression">/</button>
+            <button class="button" onclick="expression+='.'; document.querySelector('#display').value= expression">.</button>
+            <button class="button" onclick="expression+='9'; document.querySelector('#display').value= expression">9</button>
+            <button class="button" onclick="expression+='0'; document.querySelector('#display').value= expression">0</button>
+            <button class="button" onclick="expression = eval(expression); document.querySelector('#display').value= expression">=</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script >
+
+        let expression = '';
+        
+
+    </script>
+    
+</body>
+</html>
